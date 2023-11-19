@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wspieraj Finansowo</title>
+</head>
+<body>
+
+    <header>
+        <h1>Wspieraj Finansowo</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Wspieraj Mnie</h2>
+            <p>
+                Cieszymy się, że jesteś zainteresowany/a wspieraniem nas finansowo.
+                Wprowadź kwotę, którą chciałbyś/chciałabyś przekazać:
+            </p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_donations">
+                <input type="hidden" name="business" value="kacperkwasny2012@gmail.pl">
+                <input type="hidden" name="currency_code" value="PLN">
+                <label for="amount">Kwota (PLN):</label>
+                <input type="number" name="amount" id="amount" step="5" min="5" required>
+                <input type="submit" value="Wsparaj">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Wspieraj Finansowo. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+</body>
+</html>
